@@ -119,7 +119,7 @@
 }
 .smalltitle li a{
 	margin: 0 auto;
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 16px;
 	float: left;
 	margin-left: 8px;
@@ -228,8 +228,21 @@
 	height: 100%;
 	margin: 0 auto;
 }
+.leftbox{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+}
+.rightbox {
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 .imgbox li img{
-	width: 1230px;
+	/*width: 1230px;*/
 	height: 500px;
 	position: absolute;
 	left: 0;
@@ -341,7 +354,7 @@
 	width: 100%;
 	height: 371px;
 	margin-top: 32px;
-	background-color: green;
+	/*background-color: green;*/
 	margin-bottom: 14px;
 }
 .fs2left{
@@ -604,20 +617,28 @@
 	top: 10px;
 }
 .fq1{
-	width: 235px;
-	height: 302px;
+	width: 233px;
+	height: 300px;
 	background-color: white;
 	float: left;
-	margin-left: 13px;
-	margin-bottom: 15px;
+	margin: 0 auto;
+	/*margin-left: 13px;*/
+	/*margin-bottom: 15px;*/
 
 	
 }
-.fq1:hover{
-	
-	width: 233px;
-	height: 300px;
+.houve:hover .fq1{
+
+
 	border:1px solid red;
+}
+.houve{
+	width: 235px;
+	height: 302px;
+	/*background-color: red;*/
+	float: left;
+	margin-left: 13px;
+	margin-bottom: 15px;
 }
 .fq1 img{
 	width: 185px;
@@ -946,11 +967,12 @@
 	font-size: 20px;
 	margin-left: 10px;
 	color: white;
+	font-family: fpNewIconFont!important;
 }
 .topBarct input{
-	width: 648px;
+	width: 600px;
 	height: 30px;
-	
+	padding-left: 48px;
 	margin-left: 110px;
 	margin-top: 10px;
 	border:0;
@@ -1101,6 +1123,22 @@
 }
 .banner_nav ul li:hover .cdn{
 	display: block;
+
+}
+.banner_nav ul li:hover{
+	background-color: white;
+	color: red;
+	
+}
+.banner_nav ul li:hover i{
+
+	color: red;
+	
+}
+.banner_nav ul li:hover .bannerli{
+
+	color: red;
+	
 }
 .banner_nav .cdnlist{
     width: 500px;
@@ -1161,5 +1199,159 @@
     float: left;
     border: 1px solid #ccc;
  }
+.item6{
+	position: relative;
+}
+.menuhide{
+	width: 1198px;
+	height: 110px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-color: white;
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top:25px;
+	padding-bottom: 25px;
+	overflow: hidden;
+	display: none;
+}
+#item6:hover .menuhide{
+	display: block;
 
+}
+#meizhuang{
+	width: 182px;
+	border-right: 0;
+}
+#meizhuang h2{
+	color:rgba(0, 0, 0, 0.7);
+}
+#itemsh{
+	position: relative;
 
+	float: left;
+}
+#itemsh a{
+	width: 48px;
+	height: 12px;
+	line-height: 12px;
+
+	/*margin-right: 20px;*/
+}
+.shjiahide {
+	width: 122px;
+	height: 154px;
+	padding: 6px 10px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	position: absolute;
+	background-color: white;
+	right: 0;
+	display: none;
+	color:rgba(0, 0, 0, 0.7);
+}
+#itemsh:hover .shjiahide{
+	display: block;
+}
+.site-cont{
+	width: 455px;
+	height: 110px;
+	padding-left: 30px;
+	/*background-color: gray;*/
+	border-right: 1px solid #eee;
+	float: left;
+}
+.site-cont h2{
+	color: #f56a00;
+	font-weight: normal;
+}
+.site-list li{
+	width: 76px;
+	height: 16px;
+	line-height: 16px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	float: left;
+	color: rgba(0, 0, 0, 0.7);
+}
+#marker {
+	color: #2263d4;;
+}
+.wodetb{
+	width: 74px;
+	height: 40px;
+	background-color: white;
+	position: absolute;
+	padding: 8px 1px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	display:none;
+}
+.wodetb p{
+	width: 74px;
+	height: 20px;
+	line-height: 18px;
+	color:#666;
+}
+#item4:hover .wodetb{
+	display: block;
+}
+.biaoqian ul li{
+	height: 35px;
+}
+.biaoqian2 li{
+	height: 35px;
+}
+.righthide{
+	width: 35px;
+	height: 35px;
+	position: relative;
+}
+
+.righthide:hover .hide1{
+	left: -100px;
+	opacity: 1;
+	transition: all 0.5s ;
+}
+.righthide:hover .hide3{
+	left: -100px;
+	opacity: 1;
+	transition: all 0.5s ;
+}
+.hide1, .hide2, .hide3{
+	color: white;
+	line-height: 35px;
+	font-size: 12px;
+	position: relative;
+	left: -150px;
+	top: -35px;
+	opacity: 0;
+	width: 100px;
+	height: 35px;
+	background-color: #494949;
+}
+.zichan{
+	width: 35px;
+	height: 35px;
+	position: relative;
+}
+.hide2{
+	top:-70px;
+}
+.hide3{
+	top: -27px;
+}
+#ai:hover .hide2{
+	left: -100px;
+	opacity: 1;
+	transition: all 0.5s ;
+}
+
+.xiaog{
+
+}
