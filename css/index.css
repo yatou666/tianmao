@@ -1103,10 +1103,12 @@
 	height: 370px;
 	background-color: white;
 	position: fixed;
-	left: 0;
+	left: 50%;
 	top: 0;
 	bottom: 0;
-	margin:auto;
+	margin: auto auto auto -675px;
+
+	/*margin:auto;*/
 	z-index: 30;
 	display: none;
 }
